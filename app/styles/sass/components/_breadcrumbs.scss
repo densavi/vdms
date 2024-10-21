@@ -1,0 +1,29 @@
+.breadcrumbs {
+  list-style: none;
+  margin: 0 0 25px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  li {
+    color: $grey;
+    &:not(:last-child) {
+      display: flex;
+      align-items: center;
+      &:after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('../images/dist/breadcrumb-arrow.svg') center / contain;
+      }
+    }
+    a {
+      color: $grey;
+      text-decoration: none;
+      transition: color .5s;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
