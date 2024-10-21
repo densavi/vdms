@@ -1,0 +1,19 @@
+.form {
+  &__col {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 26% 37% 37%;
+    gap: 20px;
+  }
+
+
+  &__label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #404040;
+    span {
+      color: #D2322D;
+    }
+  }
+
+}

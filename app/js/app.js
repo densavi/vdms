@@ -13,4 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 
+	$('select').on('change', function () {
+		$(this).addClass('valid');
+	});
+
 })
