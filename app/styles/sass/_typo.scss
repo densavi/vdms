@@ -39,6 +39,12 @@ img {
 
 .content {
   padding: 25px 30px 25px 0;
+
+  &__foot {
+    margin: 30px 0 0;
+    font-size: 14px;
+    color: #8A92A6;
+  }
 }
 
 
@@ -73,5 +79,16 @@ img {
   }
   &-orange {
     background: $orange;
+  }
+}
+
+
+
+a {
+  color: #0F61AB;
+  text-decoration: none;
+  transition: all .5s;
+  &:hover {
+    color: $blue;
   }
 }

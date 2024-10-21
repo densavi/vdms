@@ -1,0 +1,115 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > li {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    > a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      text-decoration: none;
+      color: $grey;
+      transition: all .5s;
+      border-radius: 5px;
+      font-size: 18px;
+      svg {
+        width: 24px;
+        height: 24px;
+        path {
+          transition: fill .5s;
+        }
+      }
+      &:hover {
+        background: #D1E9FF;
+        color: $blue-dark;
+        .menu__icon {
+          path {
+            fill: $blue-dark;
+          }
+        }
+      }
+    }
+    &.active {
+      > a {
+        background: #D1E9FF;
+        color: $blue-dark;
+        .menu__icon {
+          path {
+            fill: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    margin-left: auto;
+    transition: all .5s;
+  }
+}
+
+.submenu {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: none;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 1px;
+    }
+    a {
+      padding: 8px 30px;
+      display: flex;
+      color: #8A92A6;
+      font-size: 18px;
+      text-decoration: none;
+      position: relative;
+      transition: all .5s;
+      border-radius: 5px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        background: #8A92A6;
+        border-radius: 50%;
+        transition: background .5s;
+      }
+      &:hover {
+        color: #fff;
+        background: $blue-dark;
+        &:before {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+.has-submenu {
+  > a {
+    &:hover {
+      .menu__arrow {
+        path {
+          stroke: $blue-dark;
+        }
+      }
+    }
+  }
+}
+
+.has-submenu.active {
+  .menu__arrow {
+    transform: rotate(90deg);
+    path {
+      stroke: $blue-dark;
+    }
+  }
+}
