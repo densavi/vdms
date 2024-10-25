@@ -13,3 +13,25 @@
     margin: 0 !important;
   }
 }
+
+
+.ds-btn {
+  width: 100%;
+}
+
+
+select {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .ds-nav-head {
+    margin-top: -60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ds-nav-head {
+    margin-top: -110px !important;
+  }
+}

@@ -624,7 +624,7 @@
         <div class="conatiner-fluid content-inner mt-n5 py-0">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="card">
+                    <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between flex-wrap">
                             <div class="header-title">
                                 <h4 class="card-title mb-0">Raise Bill</h4>
@@ -640,8 +640,8 @@
                             <div class="bd-example">
                                 <form>
                                     <div class="row mb-3 d-flex align-items-center">
-                                        <div class="col-12 col-sm-4 col-lg-2"><label class="form-label">Billing Type <span
-                                                    class="text-danger">*</span></label></div>
+                                        <div class="col-12 col-sm-4 col-lg-2"><label class="form-label">Billing Type
+                                                <span class="text-danger">*</span></label></div>
                                         <div class="col-12 col-sm-8 col-lg-5 d-flex align-items-center gap-3">
                                             <div class="form-check">
                                                 <input type="radio" name="radios" class="form-check-input"
@@ -682,7 +682,8 @@
                                                     </select>
                                                 </div>
                                                 <div class="col-4">
-                                                    <input type="text" class="form-control ds-select" placeholder="Case ID">
+                                                    <input type="text" class="form-control ds-select"
+                                                        placeholder="Case ID">
                                                 </div>
                                             </div>
                                         </div>
@@ -767,7 +768,8 @@
 
                                     <div class="row mb-3 d-flex align-items-center">
                                         <div class="col-12 col-sm-4 col-lg-2"></div>
-                                        <div class="col-12 col-sm-8 col-lg-5"><button type="submit" class="btn btn-primary">Search</button>
+                                        <div class="col-12 col-sm-8 col-lg-5"><button type="submit"
+                                                class="btn btn-primary">Search</button>
                                         </div>
                                     </div>
 
@@ -776,6 +778,200 @@
                         </div>
 
                     </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-bg-info p-3 rounded mb-4">Case Details</h5>
+
+                                    <div class="text-bg-light p-3 rounded mb-3">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="refer-case" class="mb-1">Refer Case ID</label>
+                                                    <input type="text" class="form-control" id="refer-case">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="bill-type" class="mb-1">Bill Type</label>
+                                                    <input type="text" class="form-control" id="bill-type">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="date-of-receipt" class="mb-1">Date of
+                                                        Receipt</label>
+                                                    <input type="text" class="form-control" id="date-of-receipt">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="case-info" class="mb-1">Case Information</label>
+                                                    <input type="text" class="form-control" id="case-info">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="case-remarks" class="mb-1">Case Remarks</label>
+                                                    <input type="text" class="form-control" id="case-remarks">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="bill-pay" class="mb-1">Bill Payee</label>
+                                                    <input type="text" class="form-control" id="bill-pay">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="text-bg-light p-3 rounded mb-3">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="client-type" class="mb-1">Client Type</label>
+                                                    <input type="text" class="form-control" id="client-type">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="client-name" class="mb-1">Client Name</label>
+                                                    <input type="text" class="form-control" id="client-name">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="client-nos" class="mb-1">Client Contact Nos</label>
+                                                    <input type="text" class="form-control" id="client-nos">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="case-type" class="mb-1">Case Type</label>
+                                                    <input type="text" class="form-control" id="case-type">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="client-address" class="mb-1">Client Address</label>
+                                                <textarea class="form-control" name="" id="client-address"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-bg-light p-3 rounded mb-3">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="party-name" class="mb-1">Party Name</label>
+                                                    <input type="text" class="form-control" id="party-name">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="party-nos" class="mb-1">Party Contact Nos.</label>
+                                                    <input type="text" class="form-control" id="party-nos">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="party-address" class="mb-1">Party Address</label>
+                                                <textarea class="form-control" name="" id="party-address"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-bg-info p-3 rounded mb-3">Bill Particulars</h5>
+
+                                    <div class="text-bg-light p-3 rounded mb-3">
+                                        <h6 class="mb-4">Professional Fee</h6>
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="prof-fee" class="mb-1">Professional Fee Description</label>
+                                                    <textarea class="form-control" name="" id="prof-fee-1"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="prof-fee-1" class="mb-1">Professional Fee (Rs.) <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control" id="prof-fee">
+                                                    <div class="form-text">Enter Amount Only. For example - 50350.50</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-bg-light p-3 rounded mb-3">
+                                        <h6 class="mb-4">Expenses</h6>
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="exp-descr" class="mb-1">Expense Description</label>
+                                                    <textarea class="form-control" name="" id="exp-descr"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="expense" class="mb-1">Expense (Rs.) </label>
+                                                    <input type="text" class="form-control" id="expense">
+                                                    <div class="form-text">Enter Amount Only. For example - 50350.50</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-bg-light p-3 rounded mb-3">
+                                        <h6 class="mb-4">Tax & Total Bill Amount</h6>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="igst" class="mb-1">IGST @ 18 % (Rs.) <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control" id="igst">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="total-bill" class="mb-1">Total Bill Amount (Rs.) <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control" id="total-bill">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
