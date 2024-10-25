@@ -1,0 +1,4 @@
+.main-content .content-inner {
+  min-height: -webkit-calc(100vh - 8rem);
+  min-height: calc(100vh - 8rem);
+}
