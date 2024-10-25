@@ -7,3 +7,25 @@
         padding: calc(var(--bs-gutter-x, .75rem) * 2);
     }
 }
+
+  
+  .ds-select {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  
+  @media (min-width: 576px) {
+    .m0 {
+      margin: 0 !important;
+    }
+  }
+  
+  
+  .ds-btn {
+    width: 100%;
+  }
+  
+  
+  select {
+    cursor: pointer;
+  }

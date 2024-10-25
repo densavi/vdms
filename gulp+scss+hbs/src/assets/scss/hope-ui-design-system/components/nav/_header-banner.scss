@@ -38,7 +38,6 @@
 }
 
 .iq-banner:not(.hide)+.content-inner {
-    margin-top: -$spacer * 3 !important;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -85,18 +84,3 @@
     }
 
 }
-@include media-breakpoint-down(lg) {
-
-    .iq-banner:not(.hide)+.content-inner {
-        margin-top: 1em !important;
-    }
-
-}
-@include media-breakpoint-down(md) {
-    .iq-banner:not(.hide)+.content-inner {
-        margin-top: 4em !important;
-    }
-
-}
-
-

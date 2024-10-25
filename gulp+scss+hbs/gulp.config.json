@@ -1,6 +1,6 @@
 
 {
-    "appName": "Hope UI",
+    "appName": "VDMS",
     "output" : "dist",
     "mini": "false",
     "layout" : "layouts/dashboard/default",
