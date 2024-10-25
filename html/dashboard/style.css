@@ -2,3 +2,14 @@
   min-height: -webkit-calc(100vh - 8rem);
   min-height: calc(100vh - 8rem);
 }
+
+.ds-select {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+@media (min-width: 576px) {
+  .m0 {
+    margin: 0 !important;
+  }
+}
