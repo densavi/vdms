@@ -1,0 +1,12 @@
+.border-left {
+  border-left: 10px solid var(--bs-primary);
+}
+
+.ds-line {
+  width: 1px;
+  height: 30px;
+  background: #CBCBCB;
+  @media (max-width: 576px) {
+    display: none;
+  }
+}

@@ -70,5 +70,3 @@ gulp+scss+hbs/node_modules
 gulp+scss+hbs/dist-*
 gulp+scss+hbs/.DS_Store
 gulp+scss+hbs/dist
-
-html_old/
