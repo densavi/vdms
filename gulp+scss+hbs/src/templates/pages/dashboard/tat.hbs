@@ -5,347 +5,391 @@
 {{> partials/dashboard/process }}
 
 
-<form method="post" class="row">
+<div class="row">
     <div class="col-sm-12">
         <div class="card-header d-flex justify-content-between flex-wrap mb-4">
             <div class="header-title">
-                <h4 class="card-title mb-0">Create New Case</h4>
+                <h4 class="card-title mb-0">Case - Details</h4>
             </div>
         </div>
     </div>
 
-    <div class="card mb-3 border-left">
-        <div class="card-body">
-            <h5 class="border-bottom pb-2 mb-3">Case Details</h5>
-            <div class="row mb-3">
-                <div class="col-12 col-lg-5 mb-3 mb-lg-0">
-                    <label class="form-label m0">Refer Case ID</label>
+    <div class="row">
+        <div class="col-9">
+            <div class="card mb-3">
+                <div class="card-body">
                     <div class="row">
-                        <div class="col-4">
-                            <select class="form-select ds-select" aria-label=".form-select-lg example ">
-                                <option selected="">2024</option>
-                                <option>2023</option>
-                                <option>2022</option>
-                                <option>2021</option>
-                            </select>
+                        <div class="col-12 col-lg-6">
+                            <div
+                                class="d-flex align-items-start align-items-sm-center flex-column flex-sm-row gap-3 mb-3">
+                                <h5>Case ID - S_2024_SEP_30</h5>
+                                <div class="ds-line"></div>
+                                <div>Last update: <span>23-Sep-2023</span></div>
+                            </div>
+                            <div style="color: #1E1E1E;">Associated Bill(s): <span
+                                    style="color: #0F61AB;">23-Sep-2023</span></div>
                         </div>
-                        <div class="col-4">
-                            <select class="form-select ds-select" aria-label=".form-select-lg example ">
-                                <option selected="">SEP</option>
-                                <option>NOV</option>
-                                <option>DEC</option>
-                            </select>
+                        <div
+                            class="col-12 col-lg-6 d-flex flex-column align-items-start align-items-lg-end mt-4 mt-lg-0">
+                            <div
+                                class="d-flex align-items-start align-items-sm-center gap-3 mb-2 flex-column flex-sm-row ">
+                                <span>Status:</span>
+
+                                <div class="alert alert-warning m-0 p-2 border-0" role="alert">
+                                    Ready for Draft Report
+                                </div>
+
+                                <!-- Блок с кастомным селектом -->
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        -- Select Action --
+                                    </button>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li>
+                                            <a class="dropdown-item" href="#" data-value="option1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="none" viewBox="0 0 24 24">
+                                                    <path fill="#0F61AB"
+                                                        d="M21 11.11V5a2 2 0 0 0-2-2h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h6.11c1.26 1.24 2.98 2 4.89 2 3.87 0 7-3.13 7-7 0-1.91-.76-3.63-2-4.89ZM12 3c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1ZM5 19V5h2v2h10V5h2v4.68c-.91-.43-1.92-.68-3-.68H7v2h4.1c-.6.57-1.06 1.25-1.42 2H7v2h2.08c-.05.33-.08.66-.08 1 0 1.08.25 2.09.68 3H5Zm11 2c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5Zm.5-4.75 2.86 1.69-.75 1.22L15 17v-5h1.5v4.25Z">
+                                                    </path>
+                                                </svg>
+                                                View Case History
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" data-value="option2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="#0F61AB" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M21 12V4.5A1.5 1.5 0 0 0 19.5 3h-15A1.5 1.5 0 0 0 3 4.5v15A1.5 1.5 0 0 0 4.5 21H12">
+                                                    </path>
+                                                    <path stroke="#0F61AB" stroke-width="2"
+                                                        d="M16 19a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                                                    <path stroke="#0F61AB" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="m18.5 18 2.5 2M7 8h10M7 12h4"></path>
+                                                </svg>
+                                                View Notes History
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" data-value="option2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="none" viewBox="0 0 24 24">
+                                                    <path fill="#0F61AB"
+                                                        d="M7 20V8.975c0-.55.2-1.017.6-1.4A1.99 1.99 0 0 1 9.025 7H20c.55 0 1.02.196 1.413.587.392.391.587.862.587 1.413v7.175a1.978 1.978 0 0 1-.575 1.4l-3.85 3.85a1.976 1.976 0 0 1-1.4.575H9c-.55 0-1.02-.196-1.412-.587A1.93 1.93 0 0 1 7 20ZM2.025 6.25c-.1-.55.008-1.046.325-1.487.316-.441.75-.712 1.3-.813L14.5 2.025c.533-.1 1.016.013 1.45.338.433.325.716.754.85 1.287l.175.775c.083.333.033.6-.15.8-.184.2-.4.317-.65.35a1.125 1.125 0 0 1-.712-.137c-.225-.125-.38-.354-.463-.688L14.825 4 4 5.925l1.5 8.6c.05.283 0 .537-.15.762a.946.946 0 0 1-.65.413.938.938 0 0 1-.75-.162 1.004 1.004 0 0 1-.4-.663L2.025 6.25ZM9 9v11h7l4-4V9H9Zm4.5 6.5v2c0 .283.096.521.288.713.192.192.43.288.712.287.282 0 .52-.097.713-.288a.957.957 0 0 0 .287-.712v-2h2a.968.968 0 0 0 .713-.288.964.964 0 0 0 .287-.712.973.973 0 0 0-.288-.712.965.965 0 0 0-.712-.288h-2v-2a.965.965 0 0 0-.288-.712.973.973 0 0 0-.712-.288.962.962 0 0 0-.712.288.97.97 0 0 0-.288.712v2h-2a.965.965 0 0 0-.712.288.972.972 0 0 0-.288.712c0 .283.095.52.288.713a.96.96 0 0 0 .712.287h2Z">
+                                                    </path>
+                                                </svg>
+                                                Add Notes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" data-value="option2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="none" viewBox="0 0 24 24">
+                                                    <path fill="#0F61AB"
+                                                        d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6Zm-2 0-8 5-8-5h16Zm0 12H4V8l8 5 8-5v10Z">
+                                                    </path>
+                                                </svg>
+                                                Email Logs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" data-value="option2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="none" viewBox="0 0 24 24">
+                                                    <path fill="#0F61AB"
+                                                        d="M5 9.8c0-.857 0-1.439.038-1.889.035-.438.1-.663.18-.819l-1.782-.908c-.247.485-.346 1.002-.392 1.564C3 8.298 3 8.976 3 9.8h2ZM5 12V9.8H3V12h2Zm-2 0v5h2v-5H3Zm0 5v2.914h2V17H3Zm0 2.914c0 1.291 1.562 1.938 2.475 1.025l-1.414-1.414a.55.55 0 0 1 .939.389H3Zm2.475 1.025L8.415 18 7 16.586l-2.939 2.939 1.414 1.414ZM15.2 16H8.414v2H15.2v-2Zm2.708-.218c-.156.08-.38.145-.819.18-.45.037-1.032.038-1.889.038v2c.824 0 1.501 0 2.052-.044.562-.046 1.079-.145 1.564-.392l-.908-1.782Zm.874-.874a2 2 0 0 1-.874.874l.908 1.782a4 4 0 0 0 1.748-1.748l-1.782-.908ZM19 12.2c0 .857 0 1.439-.038 1.889-.035.438-.1.663-.18.819l1.782.908c.247-.485.346-1.002.392-1.564.045-.55.044-1.228.044-2.052h-2Zm0-2.4v2.4h2V9.8h-2Zm-.218-2.708c.08.156.145.38.18.819C19 8.361 19 8.943 19 9.8h2c0-.824 0-1.501-.044-2.052-.046-.562-.145-1.079-.392-1.564l-1.782.908Zm-.874-.874a2 2 0 0 1 .874.874l1.782-.908a4 4 0 0 0-1.748-1.748l-.908 1.782ZM15.2 6c.857 0 1.439 0 1.889.038.438.035.663.1.819.18l.908-1.782c-.485-.247-1.002-.346-1.564-.392C16.702 4 16.024 4 15.2 4v2ZM8.8 6h6.4V4H8.8v2Zm-2.708.218c.156-.08.38-.145.819-.18C7.361 6 7.943 6 8.8 6V4c-.824 0-1.501 0-2.052.044-.562.046-1.079.145-1.564.392l.908 1.782Zm-.874.874a2 2 0 0 1 .874-.874l-.908-1.782a4 4 0 0 0-1.748 1.748l1.782.908ZM8.414 18v-2A2 2 0 0 0 7 16.586L8.414 18Z">
+                                                    </path>
+                                                    <path stroke="#0F61AB" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" d="M8 9h8m-8 4h5">
+                                                    </path>
+                                                </svg>
+                                                View Case Remarks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col-4">
-                            <input type="text" class="form-control ds-select" placeholder="Case ID">
-                        </div>
+
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-3">
-                    <label class="form-label">Bill Type <span class="text-danger">*</span></label>
-                    <div class="d-flex align-content-center gap-3">
-                        <div class="form-check">
-                            <input type="radio" name="radios" class="form-check-input" id="exampleRadio3" checked="">
-                            <label class="form-check-label" for="exampleRadio3">Single</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="radios" class="form-check-input" id="exampleRadio4">
-                            <label class="form-check-label" for="exampleRadio4">Monthly</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <label class="form-label">Urgent Case</label>
-                    <div class="d-flex gap-2 align-items-center">
-                        <input type="checkbox" class="form-check-input m0" id="exampleCheck1" style="min-width: 16px;">
-                        <label class="form-check-label" for="exampleCheck1">(Check if case is urgent)</label>
-                    </div>
-                </div>
             </div>
 
-
-            <div class="row">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <label class="form-label" for="bank-reference">Date of Receipt <span
-                            class="text-danger">*</span></label>
-                    <input type="date" class="form-control" id="exampleInputdate" value="2024-10-14">
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="bank-reference">Bank Reference No. <span
-                            class="text-danger">*</span></label>
-                    <input id="bank-reference" type="text" class="form-control" required>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="card mb-3 border-left">
-        <div class="card-body">
-            <h5 class="border-bottom pb-2 mb-3">Client Details</h5>
-
-            <div class="row mb-3">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <label class="form-label" for="firing-agency">Firing Agency <span
-                            class="text-danger">*</span></label>
-                    <select id="firing-agency" class="form-select" aria-label=".form-select-lg example" required>
-                        <option selected="">Select Firing Agency</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="select-bank">Select Bank/Company <span
-                            class="text-danger">*</span></label>
-                    <select id="select-bank" class="form-select" aria-label=".form-select-lg example" required>
-                        <option selected="">Select Bank/Company</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <label class="form-label" for="billing-office">Billing Office <span
-                            class="text-danger">*</span></label>
-                    <select id="billing-office" class="form-select" aria-label=".form-select-lg example" required>
-                        <option selected="">Select Billing Office</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="case-type">Case Type <span class="text-danger">*</span></label>
-                    <select id="case-type" class="form-select" aria-label=".form-select-lg example" required>
-                        <option selected="">Select Case Type</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <label class="form-label" for="assing-to">Assign To <span class="text-danger">*</span></label>
-                    <select id="assing-to" class="form-select" aria-label=".form-select-lg example" required>
-                        <option selected="">Select Team</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="case-initiator">Case Initiator <span
-                            class="text-danger">*</span></label>
-                    <select id="case-initiator" class="form-select" aria-label=".form-select-lg example" required>
-                        <option selected="">Select a Case Initiator</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="card mb-3 border-left">
-        <div class="card-body">
-            <h5 class="border-bottom pb-2 mb-3">Party Details</h5>
-
-            <div class="row mb-3">
-                <div class="col-12">
-                    <label class="form-label" for="party-information">Party Information <span
-                            class="text-danger">*</span></label>
-                    <select id="party-information" class="form-select" aria-label=".form-select-lg example" required>
-                        <option selected="">Select Bank/Company</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <label class="form-label" for="name">Name <span class="text-danger">*</span></label>
-                    <input id="name" type="text" class="form-control" required placeholder="Party Name">
-
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="contact-nos">Contact Nos. <span class="text-danger">*</span></label>
-                    <input id="contact-nos" type="text" class="form-control" required placeholder="Contact Nos.">
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <label class="form-label" for="address-1">Address Line 1 <span class="text-danger">*</span></label>
-                    <input id="address-1" type="text" class="form-control" required placeholder="Address Line 1">
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="address-2">Address Line 2</label>
-                    <input id="address-2" type="text" class="form-control" placeholder="Address Line 2">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                    <label class="form-label" for="select-state">Pincode, Area, Locality, State <span
-                            class="text-danger">*</span></label>
-                    <select id="select-state" class="form-select mb-3" aria-label=".form-select-lg example" required>
-                        <option selected="">Select a State</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                    <input type="text" class="form-control" placeholder="Enter Site Locality" required>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label d-none d-sm-block" style="color: transparent">s</label>
-                    <select class="form-select mb-3" aria-label=".form-select-lg example" required>
-                        <option selected="">Select an Area</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                    <input type="text" class="form-control" placeholder="Pincode" required>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="card mb-3 border-left">
-        <div class="card-body">
-            <h5 class="border-bottom pb-2 mb-3">Visiting Site Details</h5>
-
-            <div class="d-flex gap-2 align-items-center mb-3">
-                <input type="checkbox" class="form-check-input m0 m-0" id="exampleCheck3" style="min-width: 16px;">
-                <label class="form-check-label" for="exampleCheck3">Same as Party Address</label>
-            </div>
-
-
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                            <label class="form-label" for="party-info">Party Information <span
-                                    class="text-danger">*</span></label>
-                            <input id="party-info" type="text" class="form-control" placeholder="Contact Person Name">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h6 class="mb-3">Case - Initiate Process</h6>
+                    <div class="row d-flex align-items-end justify-content-between">
+                        <div class="col-12 col-sm-8 mb-3 mb-sm-0">
+                            <label class="form-label m0">Enter Case ID <span class="text-danger">*</span></label>
+                            <div class="row">
+                                <div class="col-4">
+                                    <select class="form-select ds-select" aria-label=".form-select-lg example ">
+                                        <option selected="">2024</option>
+                                        <option>2023</option>
+                                        <option>2022</option>
+                                        <option>2021</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select ds-select" aria-label=".form-select-lg example ">
+                                        <option selected="">SEP</option>
+                                        <option>NOV</option>
+                                        <option>DEC</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control ds-select" placeholder="Case ID">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-6">
-                            <label class="form-label" for="contact-no-1">Contact No. <span
-                                    class="text-danger">*</span></label>
-                            <input id="contact-no-1" type="text" class="form-control" placeholder="Contact Number">
-                        </div>
-                        <div class="col-12 mt-3 mb-3">
-                            <label class="form-label" for="address-line-1-2">Address Line 1 <span
-                                    class="text-danger">*</span></label>
-                            <input id="address-line-1-2" type="text" class="form-control" placeholder="Address Line 1">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <label class="form-label" for="state-1">State <span class="text-danger">*</span></label>
-                            <select class="form-select mb-3" id="state-1" aria-label=".form-select-lg example" required>
-                                <option selected="">Select a State</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <label class="form-label" for="district-1">District <span
-                                    class="text-danger">*</span></label>
-                            <select class="form-select mb-3" id="district-1" aria-label=".form-select-lg example"
-                                required>
-                                <option selected="">Select a District</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                            <label class="form-label" for="contact-person-2-2">Contact Person 2 <span
-                                    class="text-danger">*</span></label>
-                            <input id="contact-person-2-2" type="text" class="form-control"
-                                placeholder="Contact Person Name">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <label class="form-label" for="contact-no-2">Contact No. <span
-                                    class="text-danger">*</span></label>
-                            <input id="contact-no-2" type="text" class="form-control" placeholder="Contact Number">
-                        </div>
-                        <div class="col-12 mt-3 mb-3">
-                            <label class="form-label" for="address-line-2-4">Address Line 2 <span
-                                    class="text-danger">*</span></label>
-                            <input id="address-line-2-4" type="text" class="form-control" placeholder="Address Line 2">
-                        </div>
-                        <div class="col-12 col-sm-4 mb-3 mb-sm-0">
-                            <label class="form-label" for="area-2-1">Area <span class="text-danger">*</span></label>
-                            <select class="form-select" id="area-2-1" aria-label=".form-select-lg example" required>
-                                <option selected="">Select an Area</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-sm-4 mb-3 mb-sm-0">
-                            <label class="form-label" for="locality-2-1">Locality <span
-                                    class="text-danger">*</span></label>
-                            <input id="locality-2-1" type="text" class="form-control" placeholder="Enter Site Locality">
-                        </div>
-                        <div class="col-12 col-sm-4">
-                            <label class="form-label" for="pincode-2-1">Pincode <span
-                                    class="text-danger">*</span></label>
-                            <input id="pincode-2-1" type="text" class="form-control" placeholder="Enter Site Pincode">
+                        <div class="col-12 col-sm-2 d-flex justify-content-end">
+                            <button type="button" class="btn btn-success">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="text-bg-info p-3 rounded mb-4">Case Details</h5>
+                    <div class="text-bg-light p-3 rounded mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="refer-case" class="mb-1">Refer Case ID</label>
+                                    <input type="text" class="form-control" id="refer-case">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="bill-type" class="mb-1">Bill Type</label>
+                                    <input type="text" class="form-control" id="bill-type">
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="date-of-receipt" class="mb-1">Date of
+                                        Receipt</label>
+                                    <input type="text" class="form-control" id="date-of-receipt">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="case-info" class="mb-1">Case Additional</label>
+                                    <input type="text" class="form-control" id="case-info" value="Not Specified">
+                                </div>
+                            </div>
+                        </div>
 
-    <div class="card mb-3 border-left">
-        <div class="card-body">
-            <h5 class="border-bottom pb-2 mb-3">Upload Documents</h5>
-            <div class="row mb-3 align-items-end">
-                <div class="col-12 col-sm-4 col-lg-5 mb-3 mb-sm-0">
-                    <label class="form-label" for="doc-title">Document Title</label>
-                    <input id="doc-title" type="text" class="form-control" placeholder="Document Title">
-                </div>
-                <div class="col-12 col-sm-5 col-lg-5 mb-3 mb-sm-0">
-                    <label class="form-label" for="customFile1">Choose File</label>
-                    <input class="form-control" type="file" id="customFile1">
-                </div>
-                <div class="col-12 col-sm-3 col-lg-2">
-                    <button class="btn btn-primary" style="width: 100%;">Upload</button>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="bill-pay" class="mb-1">Bill Payee</label>
+                                    <input type="text" class="form-control" id="bill-pay">
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="team" class="mb-1">Team</label>
+                                    <input type="text" class="form-control" id="team">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="bank-rel-no" class="mb-1">Bank Ref. No.</label>
+                                    <input type="text" class="form-control" id="bank-rel-no">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-bg-light p-3 rounded mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="client-type" class="mb-1">Client Type</label>
+                                    <input type="text" class="form-control" id="client-type">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="client-name" class="mb-1">Client Name</label>
+                                    <input type="text" class="form-control" id="client-name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="client-ag" class="mb-1">Firing Agency</label>
+                                    <input type="text" class="form-control" id="client-ag">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="billing-office" class="mb-1">Billing Office</label>
+                                    <input type="text" class="form-control" id="billing-office">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="case-tp" class="mb-1">Case Type</label>
+                                    <input type="text" class="form-control" id="case-tp">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="cs-fee" class="mb-1">Case Fee</label>
+                                    <input type="text" class="form-control" id="cs-fee">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="form-text">Document size should not exceed 10 MB. Only .docx, .pdf, .xlsx, .odt, .png, .jpg and
-                .tiff documents are allowed to upload.</div>
+
+
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="text-bg-info p-3 rounded mb-4">Visiting Site Details</h5>
+                    <div class="text-bg-light p-3 rounded mb-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="primary-contact-person" class="mb-1">Primary Contact Person</label>
+                                    <input type="text" class="form-control" id="primary-contact-person">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="primary-contact-person" class="mb-1">Primary Contact Person No.</label>
+                                    <input type="text" class="form-control" id="primary-contact-person">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="sec-contact-persone" class="mb-1">Secondary Contact Person</label>
+                                    <input type="text" class="form-control" id="sec-contact-persone">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="secondary-contact-person" class="mb-1">Secondary Contact Person
+                                        No.</label>
+                                    <input type="text" class="form-control" id="secondary-contact-person" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="url" class="mb-1">Site Address</label>
+                                    <input type="text" class="form-control" id="url">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="visit-date" class="mb-1">Visit Date</label>
+                                    <input type="text" class="form-control" id="visit-date">
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="field-engineer" class="mb-1">Field Engineer</label>
+                                    <input type="text" class="form-control" id="field-engineer">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="text-bg-info p-3 rounded mb-4">Uploaded Documents</h5>
+                    <div class="text-bg-light p-3 rounded mb-3">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="doc" class="mb-1">Visit - 1</label>
+                                    <input type="text" class="form-control" id="doc" value="No document uploaded."
+                                        readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="pb-3 mb-3 border-bottom d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        </svg>
+                        Case TAT
+                    </h5>
+
+                    <div class="alert alert-success border-0 p-2 mb-3 d-flex align-items-center gap-2" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="min-width: 24px" fill="currentColor"
+                            class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        </svg>
+                        This is a success alert—check it out!
+                    </div>
+
+                    {{> partials/dashboard/timer }}
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">123</div>
+            </div>
+
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body d-block d-sm-flex justify-content-end">
-            <button type="submit" class="btn btn-success ds-submit">Submit Action</button>
-        </div>
-    </div>
 
-
-</form>
+</div>
 </div>
 {{/content}}
 {{/extend}}
