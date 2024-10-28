@@ -1,0 +1,351 @@
+{{#extend layout title="admin" active="admin" path="../" animation="true" isBreadCrumb="true" }}
+{{#content "content"}}
+
+
+{{> partials/dashboard/process }}
+
+
+<form method="post" class="row">
+    <div class="col-sm-12">
+        <div class="card-header d-flex justify-content-between flex-wrap mb-4">
+            <div class="header-title">
+                <h4 class="card-title mb-0">Create New Case</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3 border-left">
+        <div class="card-body">
+            <h5 class="border-bottom pb-2 mb-3">Case Details</h5>
+            <div class="row mb-3">
+                <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                    <label class="form-label m0">Refer Case ID</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <select class="form-select ds-select" aria-label=".form-select-lg example ">
+                                <option selected="">2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select ds-select" aria-label=".form-select-lg example ">
+                                <option selected="">SEP</option>
+                                <option>NOV</option>
+                                <option>DEC</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="form-control ds-select" placeholder="Case ID">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-3 mb-sm-3">
+                    <label class="form-label">Bill Type <span class="text-danger">*</span></label>
+                    <div class="d-flex align-content-center gap-3">
+                        <div class="form-check">
+                            <input type="radio" name="radios" class="form-check-input" id="exampleRadio3" checked="">
+                            <label class="form-check-label" for="exampleRadio3">Single</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="radios" class="form-check-input" id="exampleRadio4">
+                            <label class="form-check-label" for="exampleRadio4">Monthly</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <label class="form-label">Urgent Case</label>
+                    <div class="d-flex gap-2 align-items-center">
+                        <input type="checkbox" class="form-check-input m0" id="exampleCheck1" style="min-width: 16px;">
+                        <label class="form-check-label" for="exampleCheck1">(Check if case is urgent)</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                    <label class="form-label" for="bank-reference">Date of Receipt <span
+                            class="text-danger">*</span></label>
+                    <input type="date" class="form-control" id="exampleInputdate" value="2024-10-14">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="bank-reference">Bank Reference No. <span
+                            class="text-danger">*</span></label>
+                    <input id="bank-reference" type="text" class="form-control" required>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="card mb-3 border-left">
+        <div class="card-body">
+            <h5 class="border-bottom pb-2 mb-3">Client Details</h5>
+
+            <div class="row mb-3">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                    <label class="form-label" for="firing-agency">Firing Agency <span
+                            class="text-danger">*</span></label>
+                    <select id="firing-agency" class="form-select" aria-label=".form-select-lg example" required>
+                        <option selected="">Select Firing Agency</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="select-bank">Select Bank/Company <span
+                            class="text-danger">*</span></label>
+                    <select id="select-bank" class="form-select" aria-label=".form-select-lg example" required>
+                        <option selected="">Select Bank/Company</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                    <label class="form-label" for="billing-office">Billing Office <span
+                            class="text-danger">*</span></label>
+                    <select id="billing-office" class="form-select" aria-label=".form-select-lg example" required>
+                        <option selected="">Select Billing Office</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="case-type">Case Type <span class="text-danger">*</span></label>
+                    <select id="case-type" class="form-select" aria-label=".form-select-lg example" required>
+                        <option selected="">Select Case Type</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                    <label class="form-label" for="assing-to">Assign To <span class="text-danger">*</span></label>
+                    <select id="assing-to" class="form-select" aria-label=".form-select-lg example" required>
+                        <option selected="">Select Team</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="case-initiator">Case Initiator <span
+                            class="text-danger">*</span></label>
+                    <select id="case-initiator" class="form-select" aria-label=".form-select-lg example" required>
+                        <option selected="">Select a Case Initiator</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card mb-3 border-left">
+        <div class="card-body">
+            <h5 class="border-bottom pb-2 mb-3">Party Details</h5>
+
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label class="form-label" for="party-information">Party Information <span
+                            class="text-danger">*</span></label>
+                    <select id="party-information" class="form-select" aria-label=".form-select-lg example" required>
+                        <option selected="">Select Bank/Company</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                    <label class="form-label" for="name">Name <span class="text-danger">*</span></label>
+                    <input id="name" type="text" class="form-control" required placeholder="Party Name">
+
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="contact-nos">Contact Nos. <span class="text-danger">*</span></label>
+                    <input id="contact-nos" type="text" class="form-control" required placeholder="Contact Nos.">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                    <label class="form-label" for="address-1">Address Line 1 <span class="text-danger">*</span></label>
+                    <input id="address-1" type="text" class="form-control" required placeholder="Address Line 1">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="address-2">Address Line 2</label>
+                    <input id="address-2" type="text" class="form-control" placeholder="Address Line 2">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                    <label class="form-label" for="select-state">Pincode, Area, Locality, State <span
+                            class="text-danger">*</span></label>
+                    <select id="select-state" class="form-select mb-3" aria-label=".form-select-lg example" required>
+                        <option selected="">Select a State</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Enter Site Locality" required>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label d-none d-sm-block" style="color: transparent">s</label>
+                    <select class="form-select mb-3" aria-label=".form-select-lg example" required>
+                        <option selected="">Select an Area</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Pincode" required>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card mb-3 border-left">
+        <div class="card-body">
+            <h5 class="border-bottom pb-2 mb-3">Visiting Site Details</h5>
+
+            <div class="d-flex gap-2 align-items-center mb-3">
+                <input type="checkbox" class="form-check-input m0 m-0" id="exampleCheck3" style="min-width: 16px;">
+                <label class="form-check-label" for="exampleCheck3">Same as Party Address</label>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                            <label class="form-label" for="party-info">Party Information <span
+                                    class="text-danger">*</span></label>
+                            <input id="party-info" type="text" class="form-control" placeholder="Contact Person Name">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label class="form-label" for="contact-no-1">Contact No. <span
+                                    class="text-danger">*</span></label>
+                            <input id="contact-no-1" type="text" class="form-control" placeholder="Contact Number">
+                        </div>
+                        <div class="col-12 mt-3 mb-3">
+                            <label class="form-label" for="address-line-1-2">Address Line 1 <span
+                                    class="text-danger">*</span></label>
+                            <input id="address-line-1-2" type="text" class="form-control" placeholder="Address Line 1">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label class="form-label" for="state-1">State <span class="text-danger">*</span></label>
+                            <select class="form-select mb-3" id="state-1" aria-label=".form-select-lg example" required>
+                                <option selected="">Select a State</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label class="form-label" for="district-1">District <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-select mb-3" id="district-1" aria-label=".form-select-lg example"
+                                required>
+                                <option selected="">Select a District</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                            <label class="form-label" for="contact-person-2-2">Contact Person 2 <span
+                                    class="text-danger">*</span></label>
+                            <input id="contact-person-2-2" type="text" class="form-control"
+                                placeholder="Contact Person Name">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label class="form-label" for="contact-no-2">Contact No. <span
+                                    class="text-danger">*</span></label>
+                            <input id="contact-no-2" type="text" class="form-control" placeholder="Contact Number">
+                        </div>
+                        <div class="col-12 mt-3 mb-3">
+                            <label class="form-label" for="address-line-2-4">Address Line 2 <span
+                                    class="text-danger">*</span></label>
+                            <input id="address-line-2-4" type="text" class="form-control" placeholder="Address Line 2">
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                            <label class="form-label" for="area-2-1">Area <span class="text-danger">*</span></label>
+                            <select class="form-select" id="area-2-1" aria-label=".form-select-lg example" required>
+                                <option selected="">Select an Area</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                            <label class="form-label" for="locality-2-1">Locality <span
+                                    class="text-danger">*</span></label>
+                            <input id="locality-2-1" type="text" class="form-control" placeholder="Enter Site Locality">
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <label class="form-label" for="pincode-2-1">Pincode <span
+                                    class="text-danger">*</span></label>
+                            <input id="pincode-2-1" type="text" class="form-control" placeholder="Enter Site Pincode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="card mb-3 border-left">
+        <div class="card-body">
+            <h5 class="border-bottom pb-2 mb-3">Upload Documents</h5>
+            <div class="row mb-3 align-items-end">
+                <div class="col-12 col-sm-4 col-lg-5 mb-3 mb-sm-0">
+                    <label class="form-label" for="doc-title">Document Title</label>
+                    <input id="doc-title" type="text" class="form-control" placeholder="Document Title">
+                </div>
+                <div class="col-12 col-sm-5 col-lg-5 mb-3 mb-sm-0">
+                    <label class="form-label" for="customFile1">Choose File</label>
+                    <input class="form-control" type="file" id="customFile1">
+                </div>
+                <div class="col-12 col-sm-3 col-lg-2">
+                    <button class="btn btn-primary" style="width: 100%;">Upload</button>
+                </div>
+            </div>
+            <div class="form-text">Document size should not exceed 10 MB. Only .docx, .pdf, .xlsx, .odt, .png, .jpg and
+                .tiff documents are allowed to upload.</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body d-block d-sm-flex justify-content-end">
+            <button type="submit" class="btn btn-success ds-submit">Submit Action</button>
+        </div>
+    </div>
+
+
+</form>
+</div>
+{{/content}}
+{{/extend}}
