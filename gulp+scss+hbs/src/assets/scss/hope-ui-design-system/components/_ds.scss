@@ -17,3 +17,20 @@
     width: 100%;
   }
 }
+
+.ds-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 25px;
+  padding: 3px 15px;
+  color: #fff;
+}
+
+.ds-orange {
+  background: #FF7F3E;
+}
+
+.ds-green {
+  background: #43A047;
+}
