@@ -1,0 +1,33 @@
+.notes {
+  &__item {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__icon {
+    width: 30px;
+    min-width: 30px;
+    padding-top: 5px;
+    position: relative;
+    span {
+      height: 30px;
+      display: flex;
+      width: 100%;
+      background: var(--bs-primary);
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+  &__info {
+    background: #F5F5F5;
+    position: relative;
+    svg {
+      position: absolute;
+      left: -8px;
+      top: 13px;
+    }
+  }
+}
