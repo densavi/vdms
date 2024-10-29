@@ -1,0 +1,90 @@
+{{#extend
+  layout
+  title="admin"
+  active="admin"
+  path="../"
+  animation="true"
+  isBreadCrumb="true"
+}}
+  {{#content "content"}}
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between flex-wrap">
+            <div class="header-title">
+              <h4 class="card-title mb-0">Add New</h4>
+            </div>
+
+          </div>
+
+          <form action="" method="post" class="card-body">
+            <div class="bd-example">
+              <form>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2">
+                    <label class="form-label m0" for="name">Expense Manager Name
+                      <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="Enter Expense Manager Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2">
+                    <label class="form-label m0" for="amount">Amount
+                      <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <input
+                      type="text"
+                      id="amount"
+                      class="form-control"
+                      placeholder="Enter Amount"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2">
+                    <label class="form-label m0" for="reason">Reason
+                      <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <textarea
+                      id="reason"
+                      class="form-control"
+                      placeholder="Reason..."
+                      required
+                    >
+                    </textarea>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-sm-4 col-lg-2"></div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <div class="d-flex justify-content-end gap-2">
+                      <button class="btn btn-light">Cancel</button>
+                      <button class="btn btn-success">Add</button>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  {{/content}}
+{{/extend}}
