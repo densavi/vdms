@@ -1,0 +1,124 @@
+{{#extend
+  layout
+  title="admin"
+  active="admin"
+  path="../"
+  animation="true"
+  isBreadCrumb="true"
+}}
+  {{#content "content"}}
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between flex-wrap">
+            <div class="header-title">
+              <h4 class="card-title mb-0">Add New</h4>
+            </div>
+          </div>
+
+          <form action="" method="post" class="card-body">
+            <div class="bd-example">
+              <form>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2">
+                    <label class="form-label" for="expense-head">Expense Head
+                      <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <select
+                      id="expense-head"
+                      class="form-select"
+                      aria-label=".form-select-lg example"
+                      required
+                    >
+                      <option selected="">-- Select --</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                    <div class="form-text">Details of selected Bank Account will
+                      be displayed on Bill.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2">
+                    <label class="form-label" for="amount">Amount
+                      <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="amount"
+                      placeholder="Enter Amount"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2">
+                    <label class="form-label" for="reason">Reason
+                      <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <textarea
+                      name=""
+                      id="reason"
+                      class="form-control"
+                      required
+                      placeholder="Reason..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2">
+                    <label class="form-label">Choose File</label>
+                  </div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <input class="form-control" type="file" id="customFile1" />
+                    <div class="form-text">
+                      File size should not exceed 10 MB. Only .pdf, .png, .jpg
+                      and .tiff files are allowed to upload.
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row mb-3 d-flex align-items-center">
+                  <div class="col-12 col-sm-4 col-lg-2"></div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1">No
+                      Receipt</label>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-sm-4 col-lg-2"></div>
+                  <div class="col-12 col-sm-8 col-lg-5">
+                    <div class="d-flex justify-content-end gap-2">
+                      <button class="btn btn-light">Cancel</button>
+                      <button class="btn btn-success">Add</button>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  {{/content}}
+{{/extend}}
