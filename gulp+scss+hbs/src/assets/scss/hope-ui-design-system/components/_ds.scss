@@ -34,3 +34,12 @@
 .ds-green {
   background: #43A047;
 }
+
+.ds-dates {
+  input {
+    width: 100%;
+  }
+  &__col {
+    width: calc(50% - 10px);
+  }
+}

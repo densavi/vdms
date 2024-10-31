@@ -2,82 +2,95 @@
 {{#content "content"}}
 
 
-<form class="card mb-5 border-left">
+<form class="card mb-3 border-left">
   <div class="card-body">
-    <h5 class="border-bottom pb-2 mb-3">Case Search</h5>
+    <h5 class="border-bottom pb-1 mb-2">Case Search</h5>
 
-    <div class="row mb-3">
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-        <label class="form-label">Select Date Range</label>
-        <div class="row align-items-end">
-          <div class="col-5">
-            <input type="date" class="form-control" id="exampleInputdate">
+    <div class="row mb-2">
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label"><small>Select Date Range</small></label>
+
+        <div class="ds-dates d-flex align-items-center justify-content-between gap-2">
+          <div class="ds-dates__col">
+            <input type="date" class="form-control form-control-sm" id="exampleInputdate">
           </div>
-          <div class="col-2 pb-2 text-center">To</div>
-          <div class="col-5">
-            <input type="date" class="form-control" id="exampleInputdate1">
+          <div class="ds-date__text">To</div>
+          <div class="ds-dates__col">
+            <input type="date" class="form-control form-control-sm" id="exampleInputdate1">
           </div>
         </div>
+
       </div>
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-        <label class="form-label" for="select-bank">Select Bank/Company</label>
-        <select id="select-bank" class="form-select" aria-label=".form-select-lg example">
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label" for="select-bank"><small>Select Bank/Company</small></label>
+        <select id="select-bank" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">All Banks/Companies</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-        <label class="form-label" for="select-agency">Select Agency</label>
-        <select id="select-agency" class="form-select" aria-label=".form-select-lg example">
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label" for="select-agency"><small>Select Agency</small></label>
+        <select id="select-agency" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">All Firing Agencies</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-3">
-        <label class="form-label" for="select-office">Select Office</label>
-        <select id="select-office" class="form-select" aria-label=".form-select-lg example">
+      <div class="col-12 col-lg-4">
+        <label class="form-label" for="select-office"><small>Select Office</small></label>
+        <select id="select-office" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">All Billing Offices</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
         </select>
       </div>
-    </div>
-    <div class="row mb-3">
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-        <label class="form-label" for="select-search-criteria">Select Search Criteria</label>
-        <select id="select-search-criteria" class="form-select" aria-label=".form-select-lg example">
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label" for="select-search-criteria"><small>Select Search Criteria</small></label>
+        <select id="select-search-criteria" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">Select Search Criteria</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-        <label class="form-label" for="case-status">Case Status <span class="text-danger">*</span></label>
-        <select id="case-status" class="form-select" aria-label=".form-select-lg example" required>
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label" for="case-status"><small>Case Status <span class="text-danger">*</span></small></label>
+        <select id="case-status" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
           <option selected="">All</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-        <label class="form-label" for="case-process">Case Process <span class="text-danger">*</span></label>
-        <select id="case-process" class="form-select" aria-label=".form-select-lg example" required>
+    </div>
+    <div class="row mb-2">
+      
+      
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label" for="case-process"><small>Case Process <span class="text-danger">*</span></small></label>
+        <select id="case-process" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
           <option selected="">All</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-        <label class="form-label" for="select-team">Select Team <span class="text-danger">*</span></label>
-        <select id="select-team" class="form-select" aria-label=".form-select-lg example" required>
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label" for="select-team"><small>Select Team <span class="text-danger">*</span></small></label>
+        <select id="select-team" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
+          <option selected="">All</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+        <label class="form-label" for="bill-type"><small>Bill Type <span class="text-danger">*</span></small></label>
+        <select id="bill-type" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
           <option selected="">All</option>
           <option>1</option>
           <option>2</option>
@@ -87,15 +100,6 @@
     </div>
 
     <div class="row align-items-end">
-      <div class="col-5 col-md-3">
-        <label class="form-label" for="bill-type">Bill Type <span class="text-danger">*</span></label>
-        <select id="bill-type" class="form-select" aria-label=".form-select-lg example" required>
-          <option selected="">All</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-      </div>
       <div class="col-3 ms-auto d-flex justify-content-end">
         <button class="btn">Reset</button>
         <button class="btn btn-primary">Search</button>
@@ -106,21 +110,21 @@
 </form>
 
 
-
 <div class="row">
   <div class="col-sm-12">
-    <div class="card-header d-flex justify-content-between flex-wrap mb-4">
+    <div class="card-header d-flex justify-content-between flex-wrap mb-2 align-items-center">
       <h4 class="card-title mb-0">Case - Details</h4>
       <button class="btn btn-success">Export To Excel</button>
     </div>
   </div>
 
 
-  <div class="card">
+  <div class="col-12">
+    <div class="card">
     <div class="card-body">
 
       <div class="table-responsive">
-        <table id="datatable" class="table table-striped" data-toggle="data-table">
+        <table id="datatable" class="table table-striped table-sm" data-toggle="data-table">
           <thead>
             <tr>
               <th>S.No.</th>
@@ -210,6 +214,7 @@
 
 
     </div>
+  </div>
   </div>
 
 
