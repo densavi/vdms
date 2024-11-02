@@ -30,6 +30,8 @@
       <!-- RTL Css -->
       <link rel="stylesheet" href="../assets/css/rtl.min.css"/>
       
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+      
       
   </head>
   <body class="  ">
@@ -838,11 +840,11 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-xl-9 mb-5 col-xl-0">
+        <div class="col-12 col-xl-8 mb-5 col-xl-0">
             <div class="card mb-3">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 mb-0 mb-lg-3">
                             <div
                                 class="d-flex align-items-start align-items-sm-center flex-column flex-sm-row gap-3 mb-3">
                                 <h5>Case ID - S_2024_SEP_30</h5>
@@ -853,7 +855,7 @@
                                     style="color: #0F61AB;">23-Sep-2023</span></div>
                         </div>
                         <div
-                            class="col-12 col-lg-6 d-flex flex-column align-items-start align-items-lg-end mt-4 mt-lg-0">
+                            class="col-12 d-flex flex-column align-items-start align-items-lg-end mt-4 mt-lg-0">
                             <div
                                 class="d-flex align-items-start align-items-sm-center gap-3 mb-2 flex-column flex-sm-row ">
                                 <span>Status:</span>
@@ -986,13 +988,13 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="refer-case" class="mb-1">Refer Case ID</label>
-                                    <input type="text" class="form-control" id="refer-case">
+                                    <input type="text" class="form-control" id="refer-case" value="S_2024_JUL_40" readonly>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="bill-type" class="mb-1">Bill Type</label>
-                                    <input type="text" class="form-control" id="bill-type">
+                                    <input type="text" class="form-control" id="bill-type" value="Monthly" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1002,13 +1004,13 @@
                                 <div class="form-group">
                                     <label for="date-of-receipt" class="mb-1">Date of
                                         Receipt</label>
-                                    <input type="text" class="form-control" id="date-of-receipt">
+                                    <input type="text" class="form-control" id="date-of-receipt" value="02-Aug-2024" readonly>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="case-info" class="mb-1">Case Additional</label>
-                                    <input type="text" class="form-control" id="case-info" value="Not Specified">
+                                    <input type="text" class="form-control" id="case-info" value="Not Specified" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1017,14 +1019,14 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="bill-pay" class="mb-1">Bill Payee</label>
-                                    <input type="text" class="form-control" id="bill-pay">
+                                    <input type="text" class="form-control" id="bill-pay" value="Client" readonly>
                                 </div>
 
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="team" class="mb-1">Team</label>
-                                    <input type="text" class="form-control" id="team">
+                                    <input type="text" class="form-control" id="team" value="Team 11" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1032,7 +1034,7 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="bank-rel-no" class="mb-1">Bank Ref. No.</label>
-                                    <input type="text" class="form-control" id="bank-rel-no">
+                                    <input type="text" class="form-control" id="bank-rel-no" value="12345" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1043,13 +1045,13 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="client-type" class="mb-1">Client Type</label>
-                                    <input type="text" class="form-control" id="client-type">
+                                    <input type="text" class="form-control" id="client-type" value="Regular" readonly>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="client-name" class="mb-1">Client Name</label>
-                                    <input type="text" class="form-control" id="client-name">
+                                    <input type="text" class="form-control" id="client-name" value="ADITYA BIRLA FINANCE LTD." readonly>
                                 </div>
                             </div>
                         </div>
@@ -1058,13 +1060,13 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="client-ag" class="mb-1">Firing Agency</label>
-                                    <input type="text" class="form-control" id="client-ag">
+                                    <input type="text" class="form-control" id="client-ag" value="ADITYA BIRLA FINANCE LTD." readonly>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="billing-office" class="mb-1">Billing Office</label>
-                                    <input type="text" class="form-control" id="billing-office">
+                                    <input type="text" class="form-control" id="billing-office" value="ABFL-CFG-BARAKHAMBA ROAD-DELHI" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1073,13 +1075,13 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="case-tp" class="mb-1">Case Type</label>
-                                    <input type="text" class="form-control" id="case-tp">
+                                    <input type="text" class="form-control" id="case-tp" value="LAP" readonly>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="cs-fee" class="mb-1">Case Fee</label>
-                                    <input type="text" class="form-control" id="cs-fee">
+                                    <input type="text" class="form-control" id="cs-fee" value="11" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1098,13 +1100,13 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="primary-contact-person" class="mb-1">Primary Contact Person</label>
-                                    <input type="text" class="form-control" id="primary-contact-person">
+                                    <input type="text" class="form-control" id="primary-contact-person" value="Khushi Gupta" readonly>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="primary-contact-person" class="mb-1">Primary Contact Person No.</label>
-                                    <input type="text" class="form-control" id="primary-contact-person">
+                                    <input type="text" class="form-control" id="primary-contact-person" value="******5328" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1113,14 +1115,14 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="sec-contact-persone" class="mb-1">Secondary Contact Person</label>
-                                    <input type="text" class="form-control" id="sec-contact-persone">
+                                    <input type="text" class="form-control" id="sec-contact-persone" value="Harsh" readonly>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="secondary-contact-person" class="mb-1">Secondary Contact Person
                                         No.</label>
-                                    <input type="text" class="form-control" id="secondary-contact-person" value="">
+                                    <input type="text" class="form-control" id="secondary-contact-person" value="******5453" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1129,7 +1131,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="url" class="mb-1">Site Address</label>
-                                    <input type="text" class="form-control" id="url">
+                                    <input type="text" class="form-control" id="url" value="C-183 c block, Sector 19, Block-19 , Noida, Uttar Pradesh, India - 201301" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1138,14 +1140,14 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="visit-date" class="mb-1">Visit Date</label>
-                                    <input type="text" class="form-control" id="visit-date">
+                                    <input type="text" class="form-control" id="visit-date" value="14-Oct-2024" readonly>
                                 </div>
 
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <label for="field-engineer" class="mb-1">Field Engineer</label>
-                                    <input type="text" class="form-control" id="field-engineer">
+                                    <input type="text" class="form-control" id="field-engineer" value="Aditi Mishra FE" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1178,7 +1180,7 @@
 
 
         </div>
-        <div class="col-12 col-xl-3">
+        <div class="col-12 col-xl-4">
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="pb-3 mb-3 border-bottom d-flex align-items-center gap-2">
@@ -1203,20 +1205,20 @@
                     
                       <div class="mb-5 timer__wrap">
                         <div class="timer__col">
-                          <p>72</p>
+                          <p class="hours">72</p>
                           <span>Hours</span>
                         </div>
                         <div class="timer__col">
-                          <p>22</p>
+                          <p class="minutes">22</p>
                           <span>Minutes</span>
                         </div>
                         <div class="timer__col">
-                          <p>58</p>
+                          <p class="seconds">58</p>
                           <span>Seconds</span>
                         </div>
                       </div>
                     
-                      <button class="btn btn-primary timer__btn">
+                      <button class="btn btn-primary align-items-center timer__btn mb-3" id="pauseBtn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none" viewBox="0 0 25 24">
                           <path fill="#fff"
                             d="M12.5 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10Zm-1 14h-2V8h2v8Zm4 0h-2V8h2v8Z" />
@@ -1225,7 +1227,7 @@
                         Pause
                       </button>
                     
-                      <form class="form-group mt-3 mb-0" method="post" action="">
+                      <form class="form-group mb-0 ds-timer-form" method="post" action="">
                         <label for="reason" class="mb-1">Reason <span class="text-danger">*</span></label>
                         <textarea class="form-control" name="" id="reason"></textarea>
                         <div class="d-flex justify-content-end mt-3">
@@ -1235,6 +1237,7 @@
                     
                     
                     </div>
+
                 </div>
             </div>
 
@@ -1265,7 +1268,7 @@
                   Notes
                 </h5>
             
-                <div class="notes__item mb-4">
+                <div class="notes__item mb-2">
                   <div class="notes__icon">
                     <span>
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1299,6 +1302,53 @@
                   </div>
                 </div>
             
+                <div class="notes__item mb-2">
+                  <div class="notes__icon">
+                    <span>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon-park-solid:notes">
+                          <g id="Mask group">
+                            <mask id="mask0_611_11607" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="0" width="14"
+                              height="16">
+                              <g id="Group">
+                                <g id="Group_2">
+                                  <path id="Vector"
+                                    d="M2.66699 1.99967C2.66699 1.82286 2.73723 1.65329 2.86225 1.52827C2.98728 1.40325 3.15685 1.33301 3.33366 1.33301H10.0003L13.3337 4.66634V13.9997C13.3337 14.1765 13.2634 14.3461 13.1384 14.4711C13.0134 14.5961 12.8438 14.6663 12.667 14.6663H3.33366C3.15685 14.6663 2.98728 14.5961 2.86225 14.4711C2.73723 14.3461 2.66699 14.1765 2.66699 13.9997V1.99967Z"
+                                    fill="white" stroke="white" stroke-width="2" stroke-linejoin="round" />
+                                  <path id="Vector_2" d="M5.33398 6.66602H10.6673M5.33398 9.33268H10.6673" stroke="black"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                              </g>
+                            </mask>
+                            <g mask="url(#mask0_611_11607)">
+                              <path id="Vector_3" d="M0 0H16V16H0V0Z" fill="white" />
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="notes__info p-2 rounded text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" fill="none" viewBox="0 0 9 14">
+                      <path fill="#F5F5F5" d="M0 7 8.25.072v13.856L0 7Z" />
+                    </svg>
+                    No Notes Entry Found
+                  </div>
+                </div>
+            
+            
+            
+            
+            
+            
+            
+            
+              </div>
+            </div>
+            
+            
+            <div class="card mb-0">
+              <div class="card-body">
                 <h5 class="pb-3 mb-3 border-bottom d-flex align-items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1307,7 +1357,7 @@
                   Audit Logs
                 </h5>
             
-                <div class="notes__item mb-4">
+                <div class="notes__item mb-2">
                   <div class="notes__icon">
                     <span>
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1348,9 +1398,52 @@
                       Admin 15-Oct-2024 18:27:58
                     </div>
                   </div>
+                
                 </div>
             
-            
+                <div class="notes__item mb-2">
+                  <div class="notes__icon">
+                    <span>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon-park-solid:notes">
+                          <g id="Mask group">
+                            <mask id="mask0_611_11607" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="0" width="14"
+                              height="16">
+                              <g id="Group">
+                                <g id="Group_2">
+                                  <path id="Vector"
+                                    d="M2.66699 1.99967C2.66699 1.82286 2.73723 1.65329 2.86225 1.52827C2.98728 1.40325 3.15685 1.33301 3.33366 1.33301H10.0003L13.3337 4.66634V13.9997C13.3337 14.1765 13.2634 14.3461 13.1384 14.4711C13.0134 14.5961 12.8438 14.6663 12.667 14.6663H3.33366C3.15685 14.6663 2.98728 14.5961 2.86225 14.4711C2.73723 14.3461 2.66699 14.1765 2.66699 13.9997V1.99967Z"
+                                    fill="white" stroke="white" stroke-width="2" stroke-linejoin="round" />
+                                  <path id="Vector_2" d="M5.33398 6.66602H10.6673M5.33398 9.33268H10.6673" stroke="black"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                              </g>
+                            </mask>
+                            <g mask="url(#mask0_611_11607)">
+                              <path id="Vector_3" d="M0 0H16V16H0V0Z" fill="white" />
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="notes__info p-2 rounded text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" fill="none" viewBox="0 0 9 14">
+                      <path fill="#F5F5F5" d="M0 7 8.25.072v13.856L0 7Z" />
+                    </svg>
+                    <p>
+                      New Case Ref. No. - S_2024_OCT_7 added with Remark(s) - <span class="text-danger fst-italic">want to assign to
+                        someone else.</span>
+                    </p>
+                    <p>
+                      Updated Case Status - <span class="text-danger fst-italic">want to assign to someone else.</span>
+                    </p>
+                    <div class="alert alert-primary m-0 p-2 border-0" role="alert">
+                      Admin 15-Oct-2024 18:27:58
+                    </div>
+                  </div>
+                
+                </div>
             
             
               </div>
@@ -1372,7 +1465,9 @@
               </div>
           </div>
       </footer>
-      <!-- Footer Section End -->    </main>
+      <!-- Footer Section End -->
+      
+    </main>
     <a class="btn btn-fixed-end btn-warning btn-icon btn-setting" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample">
       <svg width="24" viewBox="0 0 24 24" class="animated-rotate icon-24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8064 7.62361L20.184 6.54352C19.6574 5.6296 18.4905 5.31432 17.5753 5.83872V5.83872C17.1397 6.09534 16.6198 6.16815 16.1305 6.04109C15.6411 5.91402 15.2224 5.59752 14.9666 5.16137C14.8021 4.88415 14.7137 4.56839 14.7103 4.24604V4.24604C14.7251 3.72922 14.5302 3.2284 14.1698 2.85767C13.8094 2.48694 13.3143 2.27786 12.7973 2.27808H11.5433C11.0367 2.27807 10.5511 2.47991 10.1938 2.83895C9.83644 3.19798 9.63693 3.68459 9.63937 4.19112V4.19112C9.62435 5.23693 8.77224 6.07681 7.72632 6.0767C7.40397 6.07336 7.08821 5.98494 6.81099 5.82041V5.82041C5.89582 5.29601 4.72887 5.61129 4.20229 6.52522L3.5341 7.62361C3.00817 8.53639 3.31916 9.70261 4.22975 10.2323V10.2323C4.82166 10.574 5.18629 11.2056 5.18629 11.8891C5.18629 12.5725 4.82166 13.2041 4.22975 13.5458V13.5458C3.32031 14.0719 3.00898 15.2353 3.5341 16.1454V16.1454L4.16568 17.2346C4.4124 17.6798 4.82636 18.0083 5.31595 18.1474C5.80554 18.2866 6.3304 18.2249 6.77438 17.976V17.976C7.21084 17.7213 7.73094 17.6516 8.2191 17.7822C8.70725 17.9128 9.12299 18.233 9.37392 18.6717C9.53845 18.9489 9.62686 19.2646 9.63021 19.587V19.587C9.63021 20.6435 10.4867 21.5 11.5433 21.5H12.7973C13.8502 21.5001 14.7053 20.6491 14.7103 19.5962V19.5962C14.7079 19.088 14.9086 18.6 15.2679 18.2407C15.6272 17.8814 16.1152 17.6807 16.6233 17.6831C16.9449 17.6917 17.2594 17.7798 17.5387 17.9394V17.9394C18.4515 18.4653 19.6177 18.1544 20.1474 17.2438V17.2438L20.8064 16.1454C21.0615 15.7075 21.1315 15.186 21.001 14.6964C20.8704 14.2067 20.55 13.7894 20.1108 13.5367V13.5367C19.6715 13.284 19.3511 12.8666 19.2206 12.3769C19.09 11.8873 19.16 11.3658 19.4151 10.928C19.581 10.6383 19.8211 10.3982 20.1108 10.2323V10.2323C21.0159 9.70289 21.3262 8.54349 20.8064 7.63277V7.63277V7.62361Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1578,5 +1673,6 @@
     <!-- App Script -->
     <script src="../assets/js/hope-ui.js" defer></script>
     
-  </body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>  </body>
 </html>

@@ -512,3 +512,68 @@ window.addEventListener('load', function () {
   })
 
 })();
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function () {
+  $('.form-select').select2({
+    tags: true,
+    placeholder: "Select or type an option",
+    allowClear: true
+  });
+});
+
+
+$(document).ready(function () {
+  let totalTime = 96 * 60 * 60;
+  let isPaused = false;
+  let timerInterval;
+
+  const $hoursElem = $('.hours');
+  const $minutesElem = $('.minutes');
+  const $secondsElem = $('.seconds');
+  const $pauseBtn = $('#pauseBtn');
+
+  function updateTimer() {
+    if (!isPaused && totalTime > 0) {
+      totalTime--;
+
+      const hours = Math.floor(totalTime / 3600);
+      const minutes = Math.floor((totalTime % 3600) / 60);
+      const seconds = totalTime % 60;
+
+      $hoursElem.text(hours.toString().padStart(2, '0'));
+      $minutesElem.text(minutes.toString().padStart(2, '0'));
+      $secondsElem.text(seconds.toString().padStart(2, '0'));
+    } else if (totalTime <= 0) {
+      clearInterval(timerInterval);
+    }
+  }
+
+  function togglePause() {
+    isPaused = !isPaused;
+    $pauseBtn.html(isPaused ? `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none" viewBox="0 0 25 24">
+  <path fill="#fff" d="M12.5 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-2 14.5v-9l6 4.5-6 4.5Z"/>
+</svg>
+ Resume` : `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none" viewBox="0 0 25 24">
+      <path fill="#fff"
+        d="M12.5 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10Zm-1 14h-2V8h2v8Zm4 0h-2V8h2v8Z" />
+    </svg> Pause`);
+    if (!isPaused) {
+      timerInterval = setInterval(updateTimer, 1000);
+      $pauseBtn.removeClass('btn-success').addClass('btn-primary');
+      $('.ds-timer-form').slideUp(500);
+      
+    } else {
+      clearInterval(timerInterval);
+      $pauseBtn.removeClass('btn-primary').addClass('btn-success');
+      $('.ds-timer-form').slideDown(500);
+    }
+  }
+
+  timerInterval = setInterval(updateTimer, 1000);
+  $pauseBtn.on('click', togglePause);
+});
