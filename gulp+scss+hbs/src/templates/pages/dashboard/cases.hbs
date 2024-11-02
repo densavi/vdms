@@ -7,22 +7,29 @@
     <h5 class="border-bottom pb-1 mb-2">Case Search</h5>
 
     <div class="row mb-2">
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label"><small>Select Date Range</small></label>
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0"><small>Select Date Range</small></label>
 
         <div class="ds-dates d-flex align-items-center justify-content-between gap-2">
           <div class="ds-dates__col">
-            <input type="date" class="form-control form-control-sm" id="exampleInputdate">
+            <div class="position-relative"
+              onclick="document.getElementById('exampleInputdate').showPicker()">
+              <input type="date" class="form-control form-control-sm" id="exampleInputdate">
+            </div>
+            {{!-- <input type="date" class="form-control form-control-sm" id="exampleInputdate"> --}}
           </div>
           <div class="ds-date__text">To</div>
           <div class="ds-dates__col">
-            <input type="date" class="form-control form-control-sm" id="exampleInputdate1">
+            <div class="position-relative"
+              onclick="document.getElementById('exampleInputdate1').showPicker()">
+              <input type="date" class="form-control form-control-sm" id="exampleInputdate1">
+            </div>
           </div>
         </div>
 
       </div>
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label" for="select-bank"><small>Select Bank/Company</small></label>
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0" for="select-bank"><small>Select Bank/Company</small></label>
         <select id="select-bank" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">All Banks/Companies</option>
           <option>1</option>
@@ -30,8 +37,8 @@
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label" for="select-agency"><small>Select Agency</small></label>
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0" for="select-agency"><small>Select Agency</small></label>
         <select id="select-agency" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">All Firing Agencies</option>
           <option>1</option>
@@ -39,8 +46,8 @@
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-4">
-        <label class="form-label" for="select-office"><small>Select Office</small></label>
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0" for="select-office"><small>Select Office</small></label>
         <select id="select-office" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">All Billing Offices</option>
           <option>1</option>
@@ -48,8 +55,8 @@
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label" for="select-search-criteria"><small>Select Search Criteria</small></label>
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0" for="select-search-criteria"><small>Select Search Criteria</small></label>
         <select id="select-search-criteria" class="form-select form-select-sm" aria-label=".form-select-lg example">
           <option selected="">Select Search Criteria</option>
           <option>1</option>
@@ -57,8 +64,9 @@
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label" for="case-status"><small>Case Status <span class="text-danger">*</span></small></label>
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0" for="case-status"><small>Case Status <span
+              class="text-danger">*</span></small></label>
         <select id="case-status" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
           <option selected="">All</option>
           <option>1</option>
@@ -68,10 +76,10 @@
       </div>
     </div>
     <div class="row mb-2">
-      
-      
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label" for="case-process"><small>Case Process <span class="text-danger">*</span></small></label>
+
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0" for="case-process"><small>Case Process <span
+              class="text-danger">*</span></small></label>
         <select id="case-process" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
           <option selected="">All</option>
           <option>1</option>
@@ -79,8 +87,9 @@
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label" for="select-team"><small>Select Team <span class="text-danger">*</span></small></label>
+      <div class="col-12 col-lg-4 mb-2">
+        <label class="form-label mb-0" for="select-team"><small>Select Team <span
+              class="text-danger">*</span></small></label>
         <select id="select-team" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
           <option selected="">All</option>
           <option>1</option>
@@ -88,8 +97,9 @@
           <option>3</option>
         </select>
       </div>
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0">
-        <label class="form-label" for="bill-type"><small>Bill Type <span class="text-danger">*</span></small></label>
+      <div class="col-12 col-lg-4 mb-3 mb-lg-3">
+        <label class="form-label mb-0" for="bill-type"><small>Bill Type <span
+              class="text-danger">*</span></small></label>
         <select id="bill-type" class="form-select form-select-sm" aria-label=".form-select-lg example" required>
           <option selected="">All</option>
           <option>1</option>
@@ -99,8 +109,8 @@
       </div>
     </div>
 
-    <div class="row align-items-end">
-      <div class="col-3 ms-auto d-flex justify-content-end">
+    <div class="row align-items-center">
+      <div class="col-12 ms-auto d-flex justify-content-center gap-2">
         <button class="btn">Reset</button>
         <button class="btn btn-primary">Search</button>
       </div>
@@ -121,100 +131,100 @@
 
   <div class="col-12">
     <div class="card">
-    <div class="card-body">
+      <div class="card-body">
 
-      <div class="table-responsive">
-        <table id="datatable" class="table table-striped table-sm" data-toggle="data-table">
-          <thead>
-            <tr>
-              <th>S.No.</th>
-              <th>Case Ref. No.</th>
-              <th>Total TAT</th>
-              <th>Field Visit TAT</th>
-              <th>Draft Report TAT</th>
-              <th>Dispatched TAT</th>
-              <th>Case Fee</th>
-              <th>Applicant</th>
-              <th>Status</th>
-              <th width="100px">
-                Area of Land/Flat (Sft./Sq.mtr./Yds/Acre)
-              </th>
-              <th width="100px">
-                Rate Adopted in Report (Sft./Sq.mtr./Yds/Acre)
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>M_2024_OCT_5</td>
-              <td>80/72</td>
-              <td>19/24</td>
-              <td>30/24</td>
-              <td>29/24</td>
-              <td>1100</td>
-              <td>NA</td>
-              <td>
-                <div class="ds-info ds-orange">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
-                    <path fill="#fff"
-                      d="M4.5 16.5c-.412 0-.765-.147-1.059-.44A1.447 1.447 0 0 1 3 15V3c0-.413.147-.765.441-1.059.294-.294.647-.44 1.059-.441h6L15 6v9c0 .412-.147.766-.44 1.06a1.44 1.44 0 0 1-1.06.44h-9Zm5.25-9.75h3.75L9.75 3v3.75Z" />
-                  </svg>
+        <div class="table-responsive">
+          <table id="datatable" class="table table-striped ds-table" data-toggle="data-table">
+            <thead>
+              <tr>
+                <th>S.No.</th>
+                <th>Case Ref. No.</th>
+                <th>Total TAT</th>
+                <th>Field Visit TAT</th>
+                <th>Draft Report TAT</th>
+                <th>Dispatched TAT</th>
+                <th>Case Fee</th>
+                <th>Applicant</th>
+                <th>Status</th>
+                <th>
+                  Area of Land/Flat (Sft./Sq.mtr./Yds/Acre)
+                </th>
+                <th>
+                  Rate Adopted in Report (Sft./Sq.mtr./Yds/Acre)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>M_2024_OCT_5</td>
+                <td>80/72</td>
+                <td>19/24</td>
+                <td>30/24</td>
+                <td>29/24</td>
+                <td>1100</td>
+                <td>NA</td>
+                <td>
+                  <div class="ds-info ds-orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
+                      <path fill="#fff"
+                        d="M4.5 16.5c-.412 0-.765-.147-1.059-.44A1.447 1.447 0 0 1 3 15V3c0-.413.147-.765.441-1.059.294-.294.647-.44 1.059-.441h6L15 6v9c0 .412-.147.766-.44 1.06a1.44 1.44 0 0 1-1.06.44h-9Zm5.25-9.75h3.75L9.75 3v3.75Z" />
+                    </svg>
 
-                  Ready for Draft Report
-                </div>
-              </td>
-              <td>NA</td>
-              <td>NA</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>M_2024_SEP_26</td>
-              <td>11/72</td>
-              <td>11/24</td>
-              <td>0/24</td>
-              <td>0/24</td>
-              <td>800</td>
-              <td>NA</td>
-              <td>
-                <div class="ds-info ds-green">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
-                    <path fill="#fff"
-                      d="m15.579 7.616-1.026-3.078A2.246 2.246 0 0 0 12.419 3H5.581a2.246 2.246 0 0 0-2.134 1.538L2.421 7.616A1.5 1.5 0 0 0 1.5 9v3.75c0 .553.303 1.032.75 1.292v1.708a.75.75 0 0 0 .75.75h.75a.75.75 0 0 0 .75-.75v-1.5h9v1.5a.75.75 0 0 0 .75.75H15a.75.75 0 0 0 .75-.75v-1.708a1.492 1.492 0 0 0 .75-1.292V9a1.5 1.5 0 0 0-.921-1.384ZM5.581 4.5h6.837c.324 0 .61.205.712.513l.83 2.487H4.04l.829-2.487a.75.75 0 0 1 .712-.513ZM4.125 12a1.124 1.124 0 1 1 0-2.249 1.124 1.124 0 0 1 0 2.249Zm9.75 0a1.124 1.124 0 1 1 0-2.248 1.124 1.124 0 0 1 0 2.248Z" />
-                  </svg>
-                  Visited
-                </div>
-              </td>
-              <td>NA</td>
-              <td>NA</td>
-            </tr>
+                    Ready for Draft Report
+                  </div>
+                </td>
+                <td>NA</td>
+                <td>NA</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>M_2024_SEP_26</td>
+                <td>11/72</td>
+                <td>11/24</td>
+                <td>0/24</td>
+                <td>0/24</td>
+                <td>800</td>
+                <td>NA</td>
+                <td>
+                  <div class="ds-info ds-green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
+                      <path fill="#fff"
+                        d="m15.579 7.616-1.026-3.078A2.246 2.246 0 0 0 12.419 3H5.581a2.246 2.246 0 0 0-2.134 1.538L2.421 7.616A1.5 1.5 0 0 0 1.5 9v3.75c0 .553.303 1.032.75 1.292v1.708a.75.75 0 0 0 .75.75h.75a.75.75 0 0 0 .75-.75v-1.5h9v1.5a.75.75 0 0 0 .75.75H15a.75.75 0 0 0 .75-.75v-1.708a1.492 1.492 0 0 0 .75-1.292V9a1.5 1.5 0 0 0-.921-1.384ZM5.581 4.5h6.837c.324 0 .61.205.712.513l.83 2.487H4.04l.829-2.487a.75.75 0 0 1 .712-.513ZM4.125 12a1.124 1.124 0 1 1 0-2.249 1.124 1.124 0 0 1 0 2.249Zm9.75 0a1.124 1.124 0 1 1 0-2.248 1.124 1.124 0 0 1 0 2.248Z" />
+                    </svg>
+                    Visited
+                  </div>
+                </td>
+                <td>NA</td>
+                <td>NA</td>
+              </tr>
 
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>S.No.</th>
-              <th>Case Ref. No.</th>
-              <th>Total TAT</th>
-              <th>Field Visit TAT</th>
-              <th>Draft Report TAT</th>
-              <th>Dispatched TAT</th>
-              <th>Case Fee</th>
-              <th>Applicant</th>
-              <th>Status</th>
-              <th>
-                Area of Land/Flat (Sft./Sq.mtr./Yds/Acre)
-              </th>
-              <th>
-                Rate Adopted in Report (Sft./Sq.mtr./Yds/Acre)
-              </th>
-            </tr>
-          </tfoot>
-        </table>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>S.No.</th>
+                <th>Case Ref. No.</th>
+                <th>Total TAT</th>
+                <th>Field Visit TAT</th>
+                <th>Draft Report TAT</th>
+                <th>Dispatched TAT</th>
+                <th>Case Fee</th>
+                <th>Applicant</th>
+                <th>Status</th>
+                <th>
+                  Area of Land/Flat (Sft./Sq.mtr./Yds/Acre)
+                </th>
+                <th>
+                  Rate Adopted in Report (Sft./Sq.mtr./Yds/Acre)
+                </th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+
       </div>
-
-
     </div>
-  </div>
   </div>
 
 

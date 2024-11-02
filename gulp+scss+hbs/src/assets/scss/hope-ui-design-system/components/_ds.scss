@@ -6,6 +6,7 @@
   width: 1px;
   height: 30px;
   background: #CBCBCB;
+
   @media (max-width: 576px) {
     display: none;
   }
@@ -39,7 +40,99 @@
   input {
     width: 100%;
   }
+
   &__col {
     width: calc(50% - 10px);
   }
+}
+
+.ds-table {
+  font-size: 14px;
+
+  >:not(caption)>*>* {
+    padding: .7rem 1.5rem;
+  }
+}
+
+.ds-tab-content {
+  display: none;
+  overflow: hidden;
+}
+
+.ds-tab h4 {
+  cursor: pointer;
+
+  img {
+    width: 20px;
+  }
+}
+
+.ds-tab {
+  h4 img {
+    transition: transform .5s ease;
+  }
+
+  &.active {
+    h4 img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.ds-bg {
+  background: rgba(#D1E9FF, .35);
+}
+
+
+.select2-container .select2-selection--single {
+  display: block;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8a92a6;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #eee;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: .25rem;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  height: 42px !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 0 ;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100% !important;
+  right: 10px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 42px !important;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid #eee !important;
+  border-radius: .25rem !important;
+}
+
+.ds-timer-form {
+  display: none;
 }

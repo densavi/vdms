@@ -19489,6 +19489,13 @@ select {
   background: #43A047;
 }
 
+.ds-dates input {
+  width: 100%;
+}
+.ds-dates__col {
+  width: calc(50% - 10px);
+}
+
 .timer {
   max-width: 300px;
   margin: 0 auto;

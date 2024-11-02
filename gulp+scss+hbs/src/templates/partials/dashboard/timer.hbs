@@ -2,20 +2,20 @@
 
   <div class="mb-5 timer__wrap">
     <div class="timer__col">
-      <p>72</p>
+      <p class="hours">72</p>
       <span>Hours</span>
     </div>
     <div class="timer__col">
-      <p>22</p>
+      <p class="minutes">22</p>
       <span>Minutes</span>
     </div>
     <div class="timer__col">
-      <p>58</p>
+      <p class="seconds">58</p>
       <span>Seconds</span>
     </div>
   </div>
 
-  <button class="btn btn-primary timer__btn">
+  <button class="btn btn-primary align-items-center timer__btn mb-3" id="pauseBtn">
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none" viewBox="0 0 25 24">
       <path fill="#fff"
         d="M12.5 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10Zm-1 14h-2V8h2v8Zm4 0h-2V8h2v8Z" />
@@ -24,7 +24,7 @@
     Pause
   </button>
 
-  <form class="form-group mt-3 mb-0" method="post" action="">
+  <form class="form-group mb-0 ds-timer-form" method="post" action="">
     <label for="reason" class="mb-1">Reason <span class="text-danger">*</span></label>
     <textarea class="form-control" name="" id="reason"></textarea>
     <div class="d-flex justify-content-end mt-3">
