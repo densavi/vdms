@@ -80,7 +80,7 @@
 }
 
 .ds-bg {
-  background: rgba(#D1E9FF, .35);
+  background: rgba(#D1E9FF, .35) !important;
 }
 
 
@@ -135,4 +135,19 @@
 
 .ds-timer-form {
   display: none;
+}
+
+.ds-table-2 {
+  background: rgba(#F5F6FA, .3);
+}
+
+.ds-table-2 td {
+  width: 50%;
+  white-space: normal;
+  vertical-align: top !important;
+}
+
+.overflow-content {
+  overflow: auto;
+  height: 230px;
 }

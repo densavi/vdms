@@ -19529,7 +19529,7 @@ select {
 }
 
 .ds-bg {
-  background: rgba(209, 233, 255, 0.35);
+  background: rgba(209, 233, 255, 0.35) !important;
 }
 
 .select2-container .select2-selection--single {
@@ -19584,6 +19584,21 @@ select {
 
 .ds-timer-form {
   display: none;
+}
+
+.ds-table-2 {
+  background: rgba(245, 246, 250, 0.3);
+}
+
+.ds-table-2 td {
+  width: 50%;
+  white-space: normal;
+  vertical-align: top !important;
+}
+
+.overflow-content {
+  overflow: auto;
+  height: 230px;
 }
 
 .timer {

@@ -41,8 +41,7 @@
                             <div class="col-12 col-sm-8 col-lg-5">
                                 <div class="row">
                                     <div class="col-4">
-                                        <select class="form-select ds-select"
-                                            aria-label=".form-select-lg example ">
+                                        <select class="form-select ds-select" aria-label=".form-select-lg example ">
                                             <option selected="">2024</option>
                                             <option>2023</option>
                                             <option>2022</option>
@@ -50,8 +49,7 @@
                                         </select>
                                     </div>
                                     <div class="col-4">
-                                        <select class="form-select ds-select"
-                                            aria-label=".form-select-lg example ">
+                                        <select class="form-select ds-select" aria-label=".form-select-lg example ">
                                             <option selected="">SEP</option>
                                             <option>NOV</option>
                                             <option>DEC</option>
@@ -147,126 +145,74 @@
 
         </div>
 
-        <form method="post" action="#" class="row">
+        <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="text-bg-info p-3 rounded mb-4">Case Details</h5>
 
-                        <div class="text-bg-light p-3 rounded mb-3">
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="refer-case" class="mb-1">Refer Case ID</label>
-                                        <input type="text" class="form-control" id="refer-case">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="bill-type" class="mb-1">Bill Type</label>
-                                        <input type="text" class="form-control" id="bill-type">
-                                    </div>
-                                </div>
-                            </div>
+                        <table class="table table-striped ds-table-2 mb-3">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <small class="d-block">Refer Case ID</small>
+                                        S_2024_JUL_40
+                                    </td>
+                                    <td><small class="d-block">Bill Type</small>Single</td>
+                                </tr>
+                                <tr>
+                                    <td><small class="d-block">Date of Receipt</small>02-Aug-2024</td>
+                                    <td><small class="d-block">Case Information</small>Need to visit the site on urgent
+                                        basis</td>
+                                </tr>
+                                <tr>
+                                    <td><small class="d-block">Case Remarks</small>Not Specified</td>
+                                    <td><small class="d-block">Bill Payee</small>Party</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="date-of-receipt" class="mb-1">Date of
-                                            Receipt</label>
-                                        <input type="text" class="form-control" id="date-of-receipt">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="case-info" class="mb-1">Case Information</label>
-                                        <input type="text" class="form-control" id="case-info">
-                                    </div>
-                                </div>
-                            </div>
+                        <table class="table table-striped ds-table-2 mb-3">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <small class="d-block">Client Type</small>
+                                        Individual
+                                    </td>
+                                    <td><small class="d-block">Client Name</small>HDFC Bank</td>
+                                </tr>
+                                <tr>
+                                    <td><small class="d-block">Client Contact Nos</small>******9090</td>
+                                    <td><small class="d-block">Case Type</small></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><small class="d-block">Client Address</small>
+                                    Ghaziabad, New Grain Market, Sector-1, Noida, Uttar Pradesh, India - 201009</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
+                        <table class="table table-striped ds-table-2">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <small class="d-block">Party Name</small>
+                                        Anshu
+                                    </td>
+                                    <td><small class="d-block">Party Contact Nos.</small>******9898</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><small class="d-block">Party Address</small>
+                                    Noida, Near Ganda Nalla , Noida, Uttar Pradesh, India - 201009</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="case-remarks" class="mb-1">Case Remarks</label>
-                                        <input type="text" class="form-control" id="case-remarks">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="bill-pay" class="mb-1">Bill Payee</label>
-                                        <input type="text" class="form-control" id="bill-pay">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="text-bg-light p-3 rounded mb-3">
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="client-type" class="mb-1">Client Type</label>
-                                        <input type="text" class="form-control" id="client-type">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="client-name" class="mb-1">Client Name</label>
-                                        <input type="text" class="form-control" id="client-name">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="client-nos" class="mb-1">Client Contact Nos</label>
-                                        <input type="text" class="form-control" id="client-nos">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="case-type" class="mb-1">Case Type</label>
-                                        <input type="text" class="form-control" id="case-type">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="client-address" class="mb-1">Client Address</label>
-                                    <textarea class="form-control" name="" id="client-address"></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-bg-light p-3 rounded mb-3">
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="party-name" class="mb-1">Party Name</label>
-                                        <input type="text" class="form-control" id="party-name">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="party-nos" class="mb-1">Party Contact Nos.</label>
-                                        <input type="text" class="form-control" id="party-nos">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <label for="party-address" class="mb-1">Party Address</label>
-                                    <textarea class="form-control" name="" id="party-address"></textarea>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <form method="post" action="" class="col-12 col-lg-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="text-bg-info p-3 rounded mb-3">Bill Particulars</h5>
@@ -340,8 +286,8 @@
 
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
 
     </div>
 </div>
