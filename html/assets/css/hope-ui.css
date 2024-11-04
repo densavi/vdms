@@ -19606,6 +19606,10 @@ select {
   color: #232d42 !important;
 }
 
+.ds-bg-light {
+  background: rgba(138, 146, 166, 0.06);
+}
+
 .timer {
   max-width: 300px;
   margin: 0 auto;
