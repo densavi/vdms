@@ -19594,11 +19594,16 @@ select {
   width: 50%;
   white-space: normal;
   vertical-align: top !important;
+  padding: 0.5rem 1rem !important;
 }
 
 .overflow-content {
   overflow: auto;
   height: 230px;
+}
+
+.ds-table-2 > tbody > tr:nth-of-type(even) > * {
+  color: #232d42 !important;
 }
 
 .timer {
